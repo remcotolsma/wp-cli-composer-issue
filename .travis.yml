@@ -21,12 +21,10 @@ install:
   - composer install
   # Plugin
   - composer install --working-dir=plugin
-  - ls -al ./wordpress/wp-content/plugins
   - ln -s ../../../plugin wordpress/wp-content/plugins/test-plugin
-  - ls -al ./wordpress/wp-content/plugins
-  - ls -al ./wordpress/wp-content/plugins/test-plugin
   - php wp-cli.phar plugin list
 
 script:
   - php plugin/test-plugin.php
   - php wp-cli.phar plugin activate test-plugin
+  - php wp-cli.phar plugin list
