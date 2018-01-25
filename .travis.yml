@@ -19,6 +19,9 @@ install:
   - php wp-cli.phar core install --title=Test --admin_user=test --admin_email=test@example.com --skip-email
   # Install Composer
   - composer install
+  # Symlink plugin
+  - ln -s test-plugin.php wordpress/plugins/test-plugin.php
 
 script:
-  php test.php
+  - php test-plugin.php
+  - php wp-cli.phar plugin activate test-plugin.php
