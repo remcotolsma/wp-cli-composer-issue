@@ -21,6 +21,7 @@ install:
   - composer install
   # Symlink plugin
   - ln -s test-plugin.php wordpress/wp-content/plugins/test-plugin.php
+  - php wp-cli.phar plugin list
 
 script:
   - php test-plugin.php
