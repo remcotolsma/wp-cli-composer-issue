@@ -1,1 +1,8 @@
+# Composer
 /vendor/
+
+# WP CLI
+/wp-cli.phar
+
+# WordPress
+/wordpress
