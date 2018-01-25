@@ -20,5 +20,3 @@ require_once __DIR__ . '/vendor/autoload.php';
  * Plugin
  */
 $test_plugin = new \RemcoTolsma\WP_CLI_ComposerIssue\TestPlugin();
-
-var_dump( $test_plugin );
