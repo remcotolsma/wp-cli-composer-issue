@@ -13,11 +13,10 @@ install:
   - php wp-cli.phar --info
   # Install WordPress
   - mkdir wordpress
-  - cd wordpress
   - php wp-cli.phar core download --path=wordpress
-  - php wp-cli.phar config --dbname=wordpress_test --dbuser=root --dbpass=
-  - php wp-cli.phar db create
-  - php wp-cli.phar core install --url=http://wordpress.test/ --title=Test --admin_user=test --admin_email=test@example.com --skip-email
+  - php wp-cli.phar config  --path=wordpress --dbname=wordpress_test --dbuser=root --dbpass= 
+  - php wp-cli.phar db create  --path=wordpress
+  - php wp-cli.phar core install  --path=wordpress --url=http://wordpress.test/ --title=Test --admin_user=test --admin_email=test@example.com --skip-email
 
 script:
   php test.php
