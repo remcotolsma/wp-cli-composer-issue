@@ -20,7 +20,7 @@ install:
   # Install Composer
   - composer install
   # Symlink plugin
-  - ln -s test-plugin.php wordpress/plugins/test-plugin.php
+  - ln -s test-plugin.php wordpress/wp-content/plugins/test-plugin.php
 
 script:
   - php test-plugin.php
