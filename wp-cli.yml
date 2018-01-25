@@ -1,0 +1,8 @@
+path: wordpress
+url: http://wordpress.test
+user: test
+
+config create:
+    dbuser: root
+    dbpass: 
+    dbname: wordpress_test
