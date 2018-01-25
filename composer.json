@@ -1,0 +1,9 @@
+{
+    "name": "remcotolsma/wp-cli-composer-issue",
+	"autoload": {
+		"psr-4": {
+			"RemcoTolsma\\WP_CLI_ComposerIssue\\": "src"
+		}
+	},
+    "require": {}
+}
